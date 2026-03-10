@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!--  כותרת Scout Me  -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scout Me"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"/>
+
+    <!--  כפתורים עליונים  -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+        <Button
+            android:id="@+id/btnMyProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="הפרופיל שלי"
+            android:textSize="14sp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnAI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI"
+            android:textSize="14sp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="סינון"
+            android:textSize="14sp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!--  רשימת שחקנים  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutButtons"
+        android:layout_marginTop="3dp"
+        android:clipToPadding="false"
+        android:padding="10dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="התראות"
+        android:textColor="#000000"
+        app:thumbTint="#000000"
+        app:trackTint="#757575" />
+
+</RelativeLayout>

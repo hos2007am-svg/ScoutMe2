@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layoutDirection="rtl">
+
+    <!-- כותרת -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ברוכים הבאים ל-ScoutMe"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- שדה אימייל -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס אימייל"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- שדה סיסמה -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס סיסמא"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- כפתור התחברות -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="התחברות"
+        android:textStyle="bold"
+        android:padding="14dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="אין לך חשבון?"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/ButtonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:text="הרשמה"
+            android:textColor="#118EFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart" />
+</LinearLayout>
+</LinearLayout>

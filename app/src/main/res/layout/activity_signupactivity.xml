@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layoutDirection="rtl"
+    android:gravity="center_horizontal">
+
+    <!-- כותרת -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה ל-ScoutMe"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- אימייל -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס אימייל"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- סיסמה -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס סיסמה"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס שם"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- קופסה לשחקן בלבד -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- כותרת בתוך הקופסה -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הכנס רק אם אתה שחקן"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- קבוצה -->
+            <EditText
+                android:id="@+id/etTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="הכנס קבוצה"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- גיל -->
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="הכנס גיל"
+                android:inputType="number"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- עמדה -->
+            <EditText
+                android:id="@+id/etPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="הכנס עמדה"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Switch
+    android:id="@+id/switchActive"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="שחקן פעיל"
+    android:textSize="16sp"
+    android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הרשמה"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="14dp"/>
+
+</LinearLayout>

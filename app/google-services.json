@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457878358367",
+    "project_id": "scout-me-30591",
+    "storage_bucket": "scout-me-30591.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457878358367:android:3d9ede3dcd2a61c26b0eea",
+        "android_client_info": {
+          "package_name": "sc.example.firebasestart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvO0N2mbOsOwUPjW8HLun7hGnFzg9NeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
