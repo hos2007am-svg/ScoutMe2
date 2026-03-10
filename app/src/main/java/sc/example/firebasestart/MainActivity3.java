@@ -36,7 +36,7 @@ public class MainActivity3 extends AppCompatActivity {
                     return;
                 }
 
-                textView.setText("טוען...");
+                textView.setText("טוען....");
 
                 String prompt = " answer this question in football with simple words and less than 50 words: how to improve in " + Question1;
                 geminiManager.sentTextPrompt(prompt, new GeminiCallback() {
